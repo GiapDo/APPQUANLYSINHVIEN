@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_bao_cao_danh_sach"
+            android:title="Danh sách sinh viên"
+            app:showAsAction="never"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/menu_bao_cao_moi_tao"
+            android:title="Sinh viên mới tạo"
+            app:showAsAction="never"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/menu_bao_cao_gpa"
+            android:title="Điểm gpa cao"
+            app:showAsAction="never"
+            android:checkable="true"/>
+
+    </group>
+
+</menu>

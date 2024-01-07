@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStudentMainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0446F8"
+        app:titleTextColor="#fff"/>
+
+<!--    Mã sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã sinh viên"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddMSV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập mã sinh viên"
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:paddingStart="13dp"
+        android:inputType="number"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddMaSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--    Tên sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tên sinh viên"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập tên sinh viên"
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:inputType="text"
+        android:paddingStart="13dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--  Giới tính sinh viên  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Giới tính"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rdbAddNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textSize="18sp"
+            android:textColor="#4dffd2"
+            android:layout_marginEnd="50dp"/>
+
+        <RadioButton
+            android:id="@+id/rdbAddNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textSize="18sp"
+            android:textColor="#4dffd2"
+            android:layout_marginStart="50dp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/cbAddGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--    Ngày sinh sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ngày sinh (dd/MM/yyyy)"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập ngày sinh "
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:inputType="date"
+        android:paddingStart="13dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--    Quê Quán sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quê Quán"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddQueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập quê quán "
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:inputType="text"
+        android:paddingStart="13dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddQueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--    Email sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập Email "
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:inputType="text"
+        android:paddingStart="13dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--    Số điện thoại sinh viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Số điện thoại"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <EditText
+        android:id="@+id/edtAddPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập số điện thoại "
+        android:textColorHint="#4dffd2"
+        android:textColor="#4dffd2"
+        android:inputType="text"
+        android:paddingStart="13dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_edittext"/>
+    <TextView
+        android:id="@+id/cbAddPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--  Khoa  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Khoa"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <Spinner
+        android:id="@+id/spAddKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_spinner_add_student"/>
+    <TextView
+        android:id="@+id/cbAddKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <!--  Lớp  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lớp"
+        android:textColor="#006622"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+    <Spinner
+        android:id="@+id/spAddLop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/custom_spinner_add_student"/>
+    <TextView
+        android:id="@+id/cbAddLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff1a1a"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:id="@+id/btnAddThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/custom_button_login_signup"
+        app:backgroundTint = "@null"/>
+
+
+</LinearLayout>
+</ScrollView>

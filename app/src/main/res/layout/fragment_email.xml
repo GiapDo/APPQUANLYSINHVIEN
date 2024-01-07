@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragment.EmailFragment">
+
+    <EditText
+        android:id="@+id/edtFragmentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="30dp"/>
+
+    <TextView
+        android:id="@+id/tvFragmentEmailCanhBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EF0A0A"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:id="@+id/btnFragmentEmailMa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lấy mã"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button_login_signup"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

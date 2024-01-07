@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GuiEmailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/emailToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#fff"
+        android:background="#2151EF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtAEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textColor="#AE051DEF"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/edtATieuDe1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Tiêu đề"
+            android:textColor="#132CA8"
+            android:textStyle="bold"
+            android:textColorHint="#132CA8"
+            android:textSize="18sp"
+            android:layout_marginVertical="30dp"
+            />
+
+        <EditText
+            android:id="@+id/edtANoiDung1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:hint="Nội dung"
+            android:textColor="#3555ED"
+            android:textColorHint="#132CA8"
+            android:textSize="14sp"
+            android:gravity="top|left"/>
+
+        <Button
+            android:id="@+id/btnAGui1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button_login_signup"
+            app:backgroundTint = "@null"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

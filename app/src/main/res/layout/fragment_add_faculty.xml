@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Thêm khoa mới"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#AA7F09" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã khoa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtFacultyMaKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập mã khoa"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/cbFacultyMaKhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khoa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtFacultyTenKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập tên khoa"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/cbFacultyTenKhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtFacultyDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập địa chỉ"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/cbFacultyDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtFacultySDT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/cbFacultySDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <Button
+        android:id="@+id/btnFacultyThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_login_signup"
+        app:backgroundTint = "@null" />
+
+</LinearLayout>

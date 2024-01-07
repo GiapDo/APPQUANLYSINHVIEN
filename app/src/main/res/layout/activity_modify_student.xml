@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModifyStudentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbModifyStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#096ED5"
+        app:titleTextColor="#fff"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svModifyStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Search here..."
+        android:layout_margin="10dp"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/custom_search_view"/>
+
+    <ListView
+        android:id="@+id/lvModifyStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="5dp"/>
+
+</LinearLayout>

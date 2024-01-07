@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2179E4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/functional_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            tools:src="@tools:sample/avatars"
+            android:layout_marginHorizontal="30dp"
+            app:shapeAppearanceOverlay="@style/circular"
+            android:background="@drawable/custom_avatar"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/functional_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Admin"
+                android:textSize="26dp"
+                android:textColor="#59D580"/>
+
+            <TextView
+                android:id="@+id/functional_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Good Morning"
+                android:textSize="26dp"
+                android:textColor="#59D580"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/custom_functional_layout">
+
+        <GridView
+            android:id="@+id/gv_list_functional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:verticalSpacing="20dp"
+            android:scrollbars="none"
+            android:horizontalSpacing="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

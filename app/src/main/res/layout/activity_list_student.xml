@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListStudentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbListStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="#fff"
+        android:background="#2151EF" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svListTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:queryHint="Search here..."
+        app:iconifiedByDefault="false"
+        android:background="@drawable/custom_search_view"/>
+
+    <ListView
+        android:id="@+id/lvListStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

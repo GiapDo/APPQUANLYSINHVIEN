@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".fragment.MoreTrainingCoursesFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Thêm khóa đào tạo mới "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#AA7F09" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã khóa đào tạo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtTrainingMaKhoaDT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập mã khóa đào tạo"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/cbTrainingMaKhoaDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên khóa đào tạo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtTrainingTenKhoaDT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập tên khóa đào tạo"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/cbTrainingTenKhoaDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày bắt đầu(dd/MM/yyyy)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtTrainingStartDay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập ngày bắt đầu"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/cbTrainingStartDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày kết thúc(dd/MM/yyyy)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtTrainingEndDay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập ngày bắt đầu"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/cbTrainingEndDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#EC0B0B"/>
+
+    <Button
+        android:id="@+id/btnTrainingThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button_login_signup"
+        app:backgroundTint = "@null"/>
+
+</LinearLayout>
